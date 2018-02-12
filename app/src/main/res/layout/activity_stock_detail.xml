@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.stockhawk.ui.StockDetailActivity"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stock_detail_ticker"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/stock_detail_chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/stock_detail_ticker"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stock_detail_empty"
+        android:text="@string/stock_detail_empty"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>
